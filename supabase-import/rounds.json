@@ -1,0 +1,698 @@
+{
+  "aufzaehlen": [
+    {
+      "id": "r-enum-1",
+      "name": "Level 36",
+      "data": {
+        "question": "Welche Pokémon entwickeln sich auf Level 36?",
+        "rows": 5,
+        "cols": 5
+      }
+    },
+    {
+      "id": "r_aufzaehlen_5bb72rt7lg",
+      "name": "AP 35 & 40",
+      "data": {
+        "question": "Welche Attacken haben 35 oder 40 AP?",
+        "rows": 5,
+        "cols": 5
+      }
+    }
+  ],
+  "trifft": [
+    {
+      "id": "r-trifft-1",
+      "name": "Fangquoten",
+      "data": {
+        "thesis": "Ich habe eine höhere Fangquote als der Finsterball!",
+        "items": [
+          {
+            "id": "p-16",
+            "name": "Ultraball",
+            "imgUrl": "https://www.pokewiki.de/images/0/03/Sugimori_Ultraball.png?20230705052136"
+          },
+          {
+            "id": "p-17",
+            "name": "Netzball",
+            "imgUrl": "https://www.pokewiki.de/images/e/e7/Sugimori_Netzball.png"
+          },
+          {
+            "id": "p-41",
+            "name": "Köderball",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/c/c1/Sugimori_K%C3%B6derball.png/600px-Sugimori_K%C3%B6derball.png?20180709151912"
+          },
+          {
+            "id": "p-142",
+            "name": "Tauchball",
+            "imgUrl": "https://www.pokewiki.de/images/5/5d/Sugimori_Tauchball.png?20230705051541"
+          },
+          {
+            "id": "p-6",
+            "name": "Luxusball",
+            "imgUrl": "https://www.pokewiki.de/images/0/00/Sugimori_Luxusball.png?20230705050723"
+          },
+          {
+            "id": "p-25",
+            "name": "Mondball",
+            "imgUrl": "https://www.pokewiki.de/images/b/b1/Sugimori_Mondball.png"
+          },
+          {
+            "id": "p-143",
+            "name": "Levelball",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/1/1c/Sugimori_Levelball.png/600px-Sugimori_Levelball.png?20180709152159"
+          },
+          {
+            "id": "p-149",
+            "name": "Flottball",
+            "imgUrl": "https://www.pokewiki.de/images/2/26/Sugimori_Flottball.png"
+          },
+          {
+            "id": "p-164",
+            "name": "Timerball",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/2/21/Sugimori_Timerball.png/582px-Sugimori_Timerball.png?20131209002010"
+          },
+          {
+            "id": "p-722",
+            "name": "Nestball",
+            "imgUrl": "https://www.pokewiki.de/images/7/76/Sugimori_Nestball.png?20230705051309"
+          }
+        ]
+      }
+    },
+    {
+      "id": "r_trifft_dbxvaptca1",
+      "name": "Hoenn Route 117",
+      "data": {
+        "thesis": "Ich bin in ORAS auf Route 117 fangbar!",
+        "items": [
+          {
+            "id": "p_8j4033tcdu",
+            "name": "Fiffyen",
+            "imgUrl": "https://crgofcfebxbzuqzvbsqm.supabase.co/storage/v1/object/sign/Poke%20Bilder/fiffyen%20teamquiz.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MjlhZjNlOS00MDIwLTRiODctOWE1Zi04N2UxNTgxOTU3ZmEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb2tlIEJpbGRlci9maWZmeWVuIHRlYW1xdWl6LnBuZyIsImlhdCI6MTc2NzE0NTM4NywiZXhwIjoxOTM5OTQ1Mzg3fQ.qQtYtVywETOd4a250PbMaLIf7OZQf7OWWsu-cr2OOmw"
+          },
+          {
+            "id": "p_b0ocv8tcdu",
+            "name": "Zigzachs",
+            "imgUrl": "https://crgofcfebxbzuqzvbsqm.supabase.co/storage/v1/object/sign/Poke%20Bilder/zigzachs%20teamquiz.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MjlhZjNlOS00MDIwLTRiODctOWE1Zi04N2UxNTgxOTU3ZmEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb2tlIEJpbGRlci96aWd6YWNocyB0ZWFtcXVpei5wbmciLCJpYXQiOjE3NjcxNDUzMDUsImV4cCI6MTkzOTk0NTMwNX0.ACG_xwLfTkD8rUk7QcwhUuwRSXizKbZKQQK6Edyx9MU"
+          },
+          {
+            "id": "p_biejkntcdv",
+            "name": "Schmerbe",
+            "imgUrl": "https://crgofcfebxbzuqzvbsqm.supabase.co/storage/v1/object/sign/Poke%20Bilder/schmerbe%20team%20quiz.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MjlhZjNlOS00MDIwLTRiODctOWE1Zi04N2UxNTgxOTU3ZmEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb2tlIEJpbGRlci9zY2htZXJiZSB0ZWFtIHF1aXoucG5nIiwiaWF0IjoxNzY3MTQ1Mjg1LCJleHAiOjE5Mzk5NDUyODV9.tPgz8b6946qlmKdzmUZhBrDnq79NoXNg4RogVbmBq-0"
+          },
+          {
+            "id": "p_tesfmhtcdv",
+            "name": "Goldini",
+            "imgUrl": "https://crgofcfebxbzuqzvbsqm.supabase.co/storage/v1/object/sign/Poke%20Bilder/goldini%20teamquiz.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MjlhZjNlOS00MDIwLTRiODctOWE1Zi04N2UxNTgxOTU3ZmEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb2tlIEJpbGRlci9nb2xkaW5pIHRlYW1xdWl6LnBuZyIsImlhdCI6MTc2NzE0NTQwMCwiZXhwIjoxOTM5OTQ1NDAwfQ.nnGJndYFYHudz9nOX1bT4rSbZWzR-8TtbSgFMzXMDOA"
+          },
+          {
+            "id": "p_eguwj7tcdw",
+            "name": "Myrapla",
+            "imgUrl": "https://crgofcfebxbzuqzvbsqm.supabase.co/storage/v1/object/sign/Poke%20Bilder/myrapla%20team%20quiz.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MjlhZjNlOS00MDIwLTRiODctOWE1Zi04N2UxNTgxOTU3ZmEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb2tlIEJpbGRlci9teXJhcGxhIHRlYW0gcXVpei5wbmciLCJpYXQiOjE3NjcxNDU0NjUsImV4cCI6MTkzOTk0NTQ2NX0.z2CXDyindbSDbQ88Q2ccvC3DCGOTVsYowJ6Hez6FgPg"
+          },
+          {
+            "id": "p_dmizzitcdw",
+            "name": "Roselia",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/2/27/Hauptartwork_315.png/250px-Hauptartwork_315.png"
+          },
+          {
+            "id": "p_vi1pg5tcdw",
+            "name": "Azumarill",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/f/f5/Hauptartwork_184.png/242px-Hauptartwork_184.png"
+          },
+          {
+            "id": "p_pd6po6tcdx",
+            "name": "Rattfratz",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/7/7a/Hauptartwork_019.png/250px-Hauptartwork_019.png"
+          },
+          {
+            "id": "p_1v5y8wtcdx",
+            "name": "Loturzel",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/b/b4/Hauptartwork_270.png/250px-Hauptartwork_270.png"
+          },
+          {
+            "id": "p_xcs3a3tcdx",
+            "name": "Wingull",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/3/34/Hauptartwork_278.png/250px-Hauptartwork_278.png"
+          }
+        ]
+      }
+    },
+    {
+      "id": "r_trifft_gx0vchtcu5",
+      "name": "Orden",
+      "data": {
+        "thesis": "Ich bin ein korrekt benannter Orden.",
+        "items": [
+          {
+            "id": "p_stxl1mtcui",
+            "name": "Flügelorden",
+            "imgUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffq8ck-b6190de5-2ca3-4ca0-b552-a08420a77e68.png/v1/fill/w_1280,h_1280/feather_badge_by_jormxdos_dffq8ck-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiIvZi9lOGRkYzRkYS0yM2RkLTQ1MDItYjY1Yi0zNzhjOWNmZTVlZmEvZGZmcThjay1iNjE5MGRlNS0yY2EzLTRjYTAtYjU1Mi1hMDg0MjBhNzdlNjgucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.J13klCAUY9aDvyjdH5g5W6Prz77hONdwJ6dtWCMplEU"
+          },
+          {
+            "id": "p_sc4vnptcui",
+            "name": "Krabbelorden",
+            "imgUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dfftdn0-e1b156bb-8c2b-4825-88d0-6680526a449d.png/v1/fill/w_894,h_894/bug_badge_by_jormxdos_dfftdn0-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiIvZi9lOGRkYzRkYS0yM2RkLTQ1MDItYjY1Yi0zNzhjOWNmZTVlZmEvZGZmdGRuMC1lMWIxNTZiYi04YzJiLTQ4MjUtODhkMC02NjgwNTI2YTQ0OWQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.KcU9M81szl34ylTWrJakuDvfhi4QsZx1vgWjXCmfB74"
+          },
+          {
+            "id": "p_rmnh9ftcuj",
+            "name": "Knöchelorden",
+            "imgUrl": "https://www.pokewiki.de/images/archive/d/dc/20170707062402%21Kn%C3%B6chelorden.png"
+          },
+          {
+            "id": "p_zkpkfstcuj",
+            "name": "Phantomorden",
+            "imgUrl": "https://crgofcfebxbzuqzvbsqm.supabase.co/storage/v1/object/sign/Poke%20Bilder/phantom%20orden.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MjlhZjNlOS00MDIwLTRiODctOWE1Zi04N2UxNTgxOTU3ZmEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb2tlIEJpbGRlci9waGFudG9tIG9yZGVuLnBuZyIsImlhdCI6MTc2NzE0NjUxMiwiZXhwIjoxOTM5OTQ2NTEyfQ.BBT5E_czzVbEWxJBQZcDabWNjTiDi6uFvEZbyTpoDUc"
+          },
+          {
+            "id": "p_d1bz45tcuj",
+            "name": "Flügelorden",
+            "imgUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffq0h1-0dc16de6-28e1-490b-adf9-480503d1dbd3.png/v1/fill/w_894,h_894/zephyr_badge_by_jormxdos_dffq0h1-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiIvZi9lOGRkYzRkYS0yM2RkLTQ1MDItYjY1Yi0zNzhjOWNmZTVlZmEvZGZmcTBoMS0wZGMxNmRlNi0yOGUxLTQ5MGItYWRmOS00ODA1MDNkMWRiZDMucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.OeS09mkTYFTSKkNjwNexquGNgy5B4ES2Hi6BZPhs3Dw"
+          },
+          {
+            "id": "p_kmip79tcuk",
+            "name": "Minenorden",
+            "imgUrl": "https://crgofcfebxbzuqzvbsqm.supabase.co/storage/v1/object/sign/Poke%20Bilder/minen%20orden.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MjlhZjNlOS00MDIwLTRiODctOWE1Zi04N2UxNTgxOTU3ZmEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb2tlIEJpbGRlci9taW5lbiBvcmRlbi5wbmciLCJpYXQiOjE3NjcxNDY2NjcsImV4cCI6MTkzOTk0NjY2N30.0EKcxWcgJ_bpER9BX4UeyESC2vG9aynpZyy7IpWFhCA"
+          },
+          {
+            "id": "p_fwvx5jtcuk",
+            "name": "Eiszapforden",
+            "imgUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffskut-64ff4e6f-7f43-417c-b6fb-e4261e204269.png/v1/fill/w_1280,h_1280/freeze_badge_by_jormxdos_dffskut-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiIvZi9lOGRkYzRkYS0yM2RkLTQ1MDItYjY1Yi0zNzhjOWNmZTVlZmEvZGZmc2t1dC02NGZmNGU2Zi03ZjQzLTQxN2MtYjZmYi1lNDI2MWUyMDQyNjkucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.EmLXyiAvLSkfStzO5j7qiTKD7LwqJ40xBXAPc9NrjBU"
+          },
+          {
+            "id": "p_b1xn7gtcuk",
+            "name": "Eisbergorden",
+            "imgUrl": "https://crgofcfebxbzuqzvbsqm.supabase.co/storage/v1/object/sign/Poke%20Bilder/eisberg%20orden.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MjlhZjNlOS00MDIwLTRiODctOWE1Zi04N2UxNTgxOTU3ZmEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb2tlIEJpbGRlci9laXNiZXJnIG9yZGVuLnBuZyIsImlhdCI6MTc2NzE0NjQzMiwiZXhwIjoxOTM5OTQ2NDMyfQ.rQyobKxR0sJON6H6Qg2ktPQ63gQ9xNqc1qo1c52Id-A"
+          },
+          {
+            "id": "p_r18f04tcul",
+            "name": "Frostorden",
+            "imgUrl": "https://crgofcfebxbzuqzvbsqm.supabase.co/storage/v1/object/sign/Poke%20Bilder/firn%20orden.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MjlhZjNlOS00MDIwLTRiODctOWE1Zi04N2UxNTgxOTU3ZmEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQb2tlIEJpbGRlci9maXJuIG9yZGVuLnBuZyIsImlhdCI6MTc2NzE0NjY4OCwiZXhwIjoxOTM5OTQ2Njg4fQ.MTvjxp19mOzKNX_NEchDg5eoRaLahy2dzl3Ks9_pKEU"
+          },
+          {
+            "id": "p_h38737tcul",
+            "name": "Prismaorden",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/8/8b/Farborden.png/600px-Farborden.png?20160704102302"
+          }
+        ]
+      }
+    }
+  ],
+  "sortieren": [
+    {
+      "id": "r-sort-1",
+      "name": "Leicht / Schwer",
+      "data": {
+        "axisLeftLabel": "leicht",
+        "axisRightLabel": "schwer",
+        "items": [
+          {
+            "id": "s-595",
+            "name": "Makuhita",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/2/28/Hauptartwork_296.png/202px-Hauptartwork_296.png"
+          },
+          {
+            "id": "s-10",
+            "name": "Draschel",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/e/e3/Hauptartwork_372.png/224px-Hauptartwork_372.png"
+          },
+          {
+            "id": "s-133",
+            "name": "Kleinstein",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/7/71/Hauptartwork_074.png/250px-Hauptartwork_074.png"
+          },
+          {
+            "id": "s-95",
+            "name": "Stollunior",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/1/18/Hauptartwork_304.png/250px-Hauptartwork_304.png"
+          },
+          {
+            "id": "s-143",
+            "name": "Zwirrklop",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/4/4b/Hauptartwork_356.png/250px-Hauptartwork_356.png"
+          },
+          {
+            "id": "s-320",
+            "name": "Floink",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/7/7c/Hauptartwork_498.png/216px-Hauptartwork_498.png"
+          },
+          {
+            "id": "s_z8g8dstdmd",
+            "name": "Kangama",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/a/ab/Hauptartwork_115.png/244px-Hauptartwork_115.png"
+          },
+          {
+            "id": "s_x42jd4tdmd",
+            "name": "Tropius",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/7/7d/Hauptartwork_357.png/250px-Hauptartwork_357.png"
+          }
+        ],
+        "solutionOrder": [
+          "s-320",
+          "s-133",
+          "s-143",
+          "s-95",
+          "s_z8g8dstdmd",
+          "s-595",
+          "s_x42jd4tdmd",
+          "s-10"
+        ]
+      }
+    },
+    {
+      "id": "r_sortieren_kay1qute24",
+      "name": "Itempreise",
+      "data": {
+        "axisLeftLabel": "Günstig",
+        "axisRightLabel": "Teuer",
+        "items": [
+          {
+            "id": "s_gdsbrtvlib",
+            "name": "Tomate",
+            "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU50PsAZIx8KONKSelwvblk7T6xPx3ucVC1g&s"
+          },
+          {
+            "id": "s_0yb8zlvlib",
+            "name": "Seidenschal",
+            "imgUrl": "https://www.serebii.net/itemdex/sprites/sv/silkscarf.png"
+          },
+          {
+            "id": "s_ypi9qsvlib",
+            "name": "Superball",
+            "imgUrl": "https://archives.bulbagarden.net/media/upload/5/54/Bag_Great_Ball_SV_Sprite.png"
+          },
+          {
+            "id": "s_bll64kvlic",
+            "name": "Supertrank",
+            "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU56Yfr0l2_KraEI9HDX8jGLGAo-bxKvqLIA&s"
+          },
+          {
+            "id": "s_vvof8yvlic",
+            "name": "Fokusgurt",
+            "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxMLAwoSpVheG3pOSTFjawMjdYfgksyE0CfA&s"
+          },
+          {
+            "id": "s_uw3c27vlic",
+            "name": "Wahlschal",
+            "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVN-MctuUDTv243eoOpmoxzCcgK1kPKwHIYw&s"
+          },
+          {
+            "id": "s_ve6p06vlid",
+            "name": "Toxikorb",
+            "imgUrl": "https://www.pokewiki.de/images/d/d2/Itemsprite_Toxik-Orb_KAPU.png"
+          },
+          {
+            "id": "s_0qzf8tvlid",
+            "name": "Poképuppe",
+            "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/7/74/latest/20230123181629/Pok%C3%A9mu%C3%B1eco_EP.png"
+          }
+        ],
+        "solutionOrder": [
+          "s_gdsbrtvlib",
+          "s_0qzf8tvlid",
+          "s_ypi9qsvlib",
+          "s_bll64kvlic",
+          "s_0yb8zlvlib",
+          "s_ve6p06vlid",
+          "s_vvof8yvlic",
+          "s_uw3c27vlic"
+        ]
+      }
+    },
+    {
+      "id": "r_sortieren_jit63ute7s",
+      "name": "Dex Nummer",
+      "data": {
+        "axisLeftLabel": "Niedrig",
+        "axisRightLabel": "Hoch",
+        "items": [
+          {
+            "id": "s_p25mu7te83",
+            "name": "Sandan",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/1/1b/Hauptartwork_027.png/228px-Hauptartwork_027.png"
+          },
+          {
+            "id": "s_scjj57te84",
+            "name": "Rettan",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/5/5e/Hauptartwork_023.png/250px-Hauptartwork_023.png"
+          },
+          {
+            "id": "s_7d2y51te84",
+            "name": "Knofensa",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/d/d8/Hauptartwork_069.png/214px-Hauptartwork_069.png"
+          },
+          {
+            "id": "s_uk6m75te84",
+            "name": "Karpador",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/4/45/Hauptartwork_129.png/223px-Hauptartwork_129.png"
+          },
+          {
+            "id": "s_tl2vb1te85",
+            "name": "Sleima",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/f/fc/Hauptartwork_088.png/250px-Hauptartwork_088.png"
+          },
+          {
+            "id": "s_zz7c86te85",
+            "name": "Enton",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/3/3a/Hauptartwork_054.png/192px-Hauptartwork_054.png"
+          },
+          {
+            "id": "s_7eneznte86",
+            "name": "Tentacha",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/6/62/Hauptartwork_072.png/250px-Hauptartwork_072.png"
+          },
+          {
+            "id": "s_8ichsfte86",
+            "name": "Kicklee",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/3/34/Hauptartwork_106.png/250px-Hauptartwork_106.png"
+          }
+        ],
+        "solutionOrder": [
+          "s_scjj57te84",
+          "s_p25mu7te83",
+          "s_zz7c86te85",
+          "s_7d2y51te84",
+          "s_7eneznte86",
+          "s_tl2vb1te85",
+          "s_8ichsfte86",
+          "s_uk6m75te84"
+        ]
+      }
+    }
+  ],
+  "fehler": [
+    {
+      "id": "r-fehler-1",
+      "name": "Finde den falschen Kreis",
+      "data": {
+        "errorImageUrl": "/public/finderror_error.png",
+        "correctImageUrl": "/public/finderror_correct.png",
+        "imageWidth": 900,
+        "imageHeight": 500,
+        "solution": {
+          "x": 0.5,
+          "y": 0.5,
+          "r": 0.1
+        }
+      }
+    }
+  ],
+  "fakten": [
+    {
+      "id": "r-fakten-1",
+      "name": "Elektronager",
+      "data": {
+        "prompt": "Welches Pokémon ist gesucht?",
+        "pokemon": [
+          {
+            "id": "pk-25",
+            "name": "Pikachu",
+            "imgUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png"
+          },
+          {
+            "id": "pk-1",
+            "name": "Plusle",
+            "imgUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/311.png"
+          },
+          {
+            "id": "pk-4",
+            "name": "Dedenne",
+            "imgUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/702.png"
+          },
+          {
+            "id": "pk-7",
+            "name": "Emolga",
+            "imgUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/587.png"
+          },
+          {
+            "id": "pk-133",
+            "name": "Morpeko",
+            "imgUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/877.png"
+          },
+          {
+            "id": "pk-143",
+            "name": "Togedemaru",
+            "imgUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/777.png"
+          }
+        ],
+        "solutionPokemonId": "pk-7",
+        "facts": [
+          {
+            "id": "f-1",
+            "text": "Hat keine Vorentwicklung.",
+            "appliesToPokemonIds": [
+              "pk-1",
+              "pk-4",
+              "pk-7",
+              "pk-133",
+              "pk-143"
+            ]
+          },
+          {
+            "id": "f-2",
+            "text": "Initiative ist sein höchster Wert.",
+            "appliesToPokemonIds": [
+              "pk-25",
+              "pk-1",
+              "pk-4",
+              "pk-7",
+              "pk-133"
+            ]
+          },
+          {
+            "id": "f-3",
+            "text": "Kann immun gegen Elektro-Attacken sein.",
+            "appliesToPokemonIds": [
+              "pk-1",
+              "pk-7",
+              "pk-25",
+              "pk-143"
+            ]
+          },
+          {
+            "id": "f-4",
+            "text": "Hat eine Fangrate von 200.",
+            "appliesToPokemonIds": [
+              "pk-1",
+              "pk-7"
+            ]
+          },
+          {
+            "id": "f-5",
+            "text": "Wird nicht der Farbe Gelb zugeordnet.",
+            "appliesToPokemonIds": [
+              "pk-7",
+              "pk-143"
+            ]
+          },
+          {
+            "id": "f_f27seqt59y",
+            "text": "Wird von einem/r Arenaleiter/in eingesetzt.",
+            "appliesToPokemonIds": [
+              "pk-25",
+              "pk-7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "r_fakten_jq3g18vmuv",
+      "name": "Starter",
+      "data": {
+        "prompt": "",
+        "pokemon": [
+          {
+            "id": "pk_avt8h5vmuv",
+            "name": "Hydropi",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/2/2f/Hauptartwork_258.png/570px-Hauptartwork_258.png?20250127002511"
+          },
+          {
+            "id": "pk_stwky0vmuv",
+            "name": "Panflam",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/f/fb/Hauptartwork_390.png/356px-Hauptartwork_390.png?20230514201948"
+          },
+          {
+            "id": "pk_tnjtxmvmuv",
+            "name": "Igamaro",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/0/07/Hauptartwork_650.png/416px-Hauptartwork_650.png?20130526161132"
+          },
+          {
+            "id": "pk_itmxfwvmuv",
+            "name": "Ottaro",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/3/30/Hauptartwork_501.png/463px-Hauptartwork_501.png?20210227093907"
+          },
+          {
+            "id": "pk_hdktgkvmuv",
+            "name": "Feurigel",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/4/41/Hauptartwork_155.png/789px-Hauptartwork_155.png?20210227094135"
+          },
+          {
+            "id": "pk_utgjcvvmuv",
+            "name": "Felori",
+            "imgUrl": "https://www.pokewiki.de/images/thumb/2/23/Hauptartwork_906.png/487px-Hauptartwork_906.png?20220227151907"
+          }
+        ],
+        "solutionPokemonId": "pk_tnjtxmvmuv",
+        "facts": [
+          {
+            "id": "f_td9hpxvmuv",
+            "text": "Hat in seiner finalen Stufe eine 4fach-Schwäche!",
+            "appliesToPokemonIds": [
+              "pk_avt8h5vmuv",
+              "pk_tnjtxmvmuv",
+              "pk_utgjcvvmuv"
+            ]
+          },
+          {
+            "id": "f_ludjkxvmuv",
+            "text": "Steht in seiner finalen Form auf 2 Beinen.",
+            "appliesToPokemonIds": [
+              "pk_stwky0vmuv",
+              "pk_tnjtxmvmuv",
+              "pk_hdktgkvmuv",
+              "pk_utgjcvvmuv"
+            ]
+          },
+          {
+            "id": "f_mkczmvvmuv",
+            "text": "Entwickelt sich auf Level 16.",
+            "appliesToPokemonIds": [
+              "pk_avt8h5vmuv",
+              "pk_tnjtxmvmuv",
+              "pk_utgjcvvmuv"
+            ]
+          },
+          {
+            "id": "f_oak6advmuv",
+            "text": "Die finale Entwicklung hat eine Sonderform.",
+            "appliesToPokemonIds": [
+              "pk_tnjtxmvmuv",
+              "pk_avt8h5vmuv",
+              "pk_itmxfwvmuv",
+              "pk_hdktgkvmuv"
+            ]
+          },
+          {
+            "id": "f_ff8dh3vmuv",
+            "text": "Ist vom Typ Pflanze.",
+            "appliesToPokemonIds": [
+              "pk_tnjtxmvmuv",
+              "pk_utgjcvvmuv"
+            ]
+          },
+          {
+            "id": "f_a71u1bvmyw",
+            "text": "War nie ein Pokémon von Ash im Anime.",
+            "appliesToPokemonIds": [
+              "pk_avt8h5vmuv",
+              "pk_utgjcvvmuv",
+              "pk_tnjtxmvmuv"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "r_fakten_sfo03xvrxu",
+      "name": "Attacken",
+      "data": {
+        "prompt": "Welche Attacke ist gesucht?",
+        "pokemon": [
+          {
+            "id": "pk_apsthwvrxu",
+            "name": "Flammenwurf",
+            "imgUrl": "https://www.pokewiki.de/images/c/c9/Itemsprite_TM_Feuer_KAPU.png?20221117145114"
+          },
+          {
+            "id": "pk_l6uf32vrxu",
+            "name": "Eisstrahl",
+            "imgUrl": "https://www.pokewiki.de/images/8/82/Itemsprite_TM_Eis_KAPU.png?20221117145110"
+          },
+          {
+            "id": "pk_15ncn6vrxu",
+            "name": "Spukball",
+            "imgUrl": "https://www.pokewiki.de/images/0/0b/Itemsprite_TM_Geist_KAPU.png?20221117145114"
+          },
+          {
+            "id": "pk_7563n9vrxu",
+            "name": "Psychokinese",
+            "imgUrl": "https://www.pokewiki.de/images/9/90/Itemsprite_TM_Psycho_KAPU.png?20221117145118"
+          },
+          {
+            "id": "pk_lfn321vrxu",
+            "name": "Drachenpuls",
+            "imgUrl": "https://www.pokewiki.de/images/3/33/Itemsprite_TM_Drache_KAPU.png?20221117145109"
+          },
+          {
+            "id": "pk_qhgiikvrxu",
+            "name": "Surfer",
+            "imgUrl": "https://www.pokewiki.de/images/f/fe/Itemsprite_TM_Wasser_KAPU.png?20221117145117"
+          }
+        ],
+        "solutionPokemonId": "pk_l6uf32vrxu",
+        "facts": [
+          {
+            "id": "f_l09fdyvrxu",
+            "text": "Kann von Nidoking erlernt werden.",
+            "appliesToPokemonIds": [
+              "pk_15ncn6vrxu",
+              "pk_lfn321vrxu",
+              "pk_l6uf32vrxu",
+              "pk_apsthwvrxu",
+              "pk_qhgiikvrxu"
+            ]
+          },
+          {
+            "id": "f_c5oua7vrxu",
+            "text": "Ist Stärke 90.",
+            "appliesToPokemonIds": [
+              "pk_apsthwvrxu",
+              "pk_l6uf32vrxu",
+              "pk_7563n9vrxu",
+              "pk_qhgiikvrxu"
+            ]
+          },
+          {
+            "id": "f_446lksvrxu",
+            "text": "Ist sehr effektiv gegen Grandiras.",
+            "appliesToPokemonIds": [
+              "pk_l6uf32vrxu",
+              "pk_7563n9vrxu",
+              "pk_lfn321vrxu"
+            ]
+          },
+          {
+            "id": "f_t3hp93vrxu",
+            "text": "Existiert in Legenden: Arceus.",
+            "appliesToPokemonIds": [
+              "pk_7563n9vrxu",
+              "pk_apsthwvrxu",
+              "pk_l6uf32vrxu",
+              "pk_15ncn6vrxu"
+            ]
+          },
+          {
+            "id": "f_b4mdblvrxu",
+            "text": "Hat 10 AP.",
+            "appliesToPokemonIds": [
+              "pk_l6uf32vrxu",
+              "pk_lfn321vrxu",
+              "pk_7563n9vrxu"
+            ]
+          },
+          {
+            "id": "f_yxb652vu0z",
+            "text": "Gehört in Wettbewerben zur Schönheits-Kategorie.",
+            "appliesToPokemonIds": [
+              "pk_l6uf32vrxu",
+              "pk_apsthwvrxu",
+              "pk_qhgiikvrxu",
+              "pk_lfn321vrxu"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

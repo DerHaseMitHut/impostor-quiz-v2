@@ -1,0 +1,159 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  color: #111;
+  background: #f6f7fb;
+
+  /* UI tokens */
+  /* solid fills so the stage background never bleeds into cells */
+  --correct-bg: #4ade80;
+  --wrong-bg: #f87171;
+  --neutral-bg: rgba(0, 0, 0, 0.03);
+  --frame-bg: rgba(255, 255, 255, 0.92);
+  --frame-border: rgba(0, 0, 0, 0.14);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  /* a bit less sterile: subtle "pokéball-ish" pattern */
+  background-color: #f6f7fb;
+  background-image:
+    radial-gradient(circle at 18px 18px, rgba(0,0,0,0.06) 0 9px, transparent 10px),
+    radial-gradient(circle at 18px 18px, rgba(255,0,0,0.05) 0 6px, transparent 7px),
+    linear-gradient(180deg, rgba(0,0,0,0.05) 0 1px, transparent 1px);
+  background-size: 72px 72px, 72px 72px, 72px 72px;
+  background-position: 0 0, 0 0, 0 36px;
+}
+
+a { color: inherit; }
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+
+input, textarea, select {
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.card {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
+
+.container {
+  /* Give the 16:9 stage more room (especially on 1080p). */
+  max-width: 2400px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Broadcast / stream area */
+.stageWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.stageFrame {
+  position: relative;
+  /* Fill the available column but keep a sensible max for readability. */
+  width: 100%;
+  /* Ensure the full stage stays visible on typical screens (no clipping on 1080p). */
+  max-height: calc(100vh - 32px);
+  max-width: min(1850px, calc((100vh - 32px) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  /* Stage background should NOT match the page background and must stay subtle.
+     This is the visible "area around the boxes" in the 16:9 capture. */
+  background:
+    radial-gradient(900px 600px at 15% 10%, rgba(255,255,255,0.95), rgba(255,255,255,0) 60%),
+    radial-gradient(900px 700px at 85% 85%, rgba(255,255,255,0.70), rgba(255,255,255,0) 62%),
+    linear-gradient(135deg, #f7f9ff, #eef3ff 55%, #f9fbff);
+  border: 1px solid var(--frame-border);
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.10);
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.stageInner {
+  height: 100%;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stageHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.10);
+  background: #fff;
+}
+
+.stageBody {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
+.stageBody > * {
+  flex: 1;
+  min-height: 0;
+}
+
+.stageCenter {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(0,0,0,0.03);
+}
+
+.muted { opacity: 0.7; }
+
+.hr { height: 1px; background: rgba(0,0,0,0.08); margin: 12px 0; }
+
+.grid {
+  display: grid;
+  gap: 8px;
+}
+
+.pill {
+  border-radius: 999px;
+  padding: 6px 10px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(0,0,0,0.03);
+  font-size: 12px;
+}
