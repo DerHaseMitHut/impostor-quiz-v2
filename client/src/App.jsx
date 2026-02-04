@@ -232,10 +232,14 @@ export default function App() {
       console.log("SUBSCRIBE room_state code =", code);
 
      channel = supabase
-  .channel(`room:${code}`)
+  .channel(`room:${code}`, { config: { broadcast: { self: true } } })
   .on("broadcast", { event: "state_updated" }, async () => {
     const fr2 = await fetchRoomState(code);
     if (!fr2.ok || !fr2.state) return;
+    // ...dein setRoomState Code...
+  })
+  .subscribe((s) => setConn(s === "SUBSCRIBED"));
+
 
     const st = deepClone(fr2.state);
     st.code = code;
