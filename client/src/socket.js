@@ -129,7 +129,17 @@ async function updateRoomState(code, mutator, { tries = 6 } = {}) {
       return { ok: false, error: e };
     }
     const wr = await writeRoomRowCAS(code, prev, st);
-    if (wr.ok) return { ok: true, state: st, updated_at: wr.updated_at };
+   if (wr.ok) {
+  // Broadcast an alle (inkl. Sender, weil dein Channel in App.jsx self:true hat)
+  await supabase.channel(`room:${code}`).send({
+    type: 'broadcast',
+    event: 'state_updated',
+    payload: { code }
+  });
+
+  return { ok: true, state: st, updated_at: wr.updated_at };
+}
+
     lastErr = wr.error;
     // retry on conflict
   }
