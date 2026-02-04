@@ -98,7 +98,16 @@ async function updateRoomState(code, mutator, tries = 6) {
     const changed = await mutator(st);
     if (changed === false) return { ok: true, skipped: true, state: st };
     const wr = await writeRoomStateCAS(code, prev, st);
-    if (wr.ok) return { ok: true, state: st, updated_at: wr.updated_at };
+    if (wr.ok) {
+  // alle Clients informieren (Host UND Teilnehmer)
+  supabase.channel(`room:${code}`).send({
+    type: 'broadcast',
+    event: 'state_updated',
+    payload: { code }
+  });
+  return { ok: true, state: st, updated_at: wr.updated_at };
+}
+
     lastErr = wr.error;
   }
   return { ok: false, error: lastErr || new Error('conflict') };
@@ -220,25 +229,23 @@ export default function App() {
       console.log("SUBSCRIBE room_state code =", code);
 
       channel = supabase
-        .channel(`room_state:${code}`)
-        .on(
-          'postgres_changes',
-          { event: '*', schema: 'public', table: 'room_state' },
-          (payload) => {
-            const st = deepClone(payload?.new?.state || {});
-            const hostId2 = String(st.hostId || st.hostPlayerId || '');
-            st.code = code;
-            st.hostId = hostId2;
-            st.hostPlayerId = hostId2;
-            st.players = normalizePlayers(st.players, hostId2);
-            ensureHost(st);
-            st.players = st.players.map((p) => ({ ...p, isHost: p.id === st.hostId }));
-            st.rounds = roundsIndex;
-            setRoomState(st);
-          }
-        )
-        .subscribe((s) => {
-          setConn(s === 'SUBSCRIBED');
+  .channel(`room:${code}`)
+  .on('broadcast', { event: 'state_updated' }, async () => {
+    const fr2 = await fetchRoomState(code);
+    if (!fr2.ok || !fr2.state) return;
+
+    const st = deepClone(fr2.state);
+    st.code = code;
+    const hostId2 = String(st.hostId || st.hostPlayerId || '');
+    st.hostId = hostId2;
+    st.hostPlayerId = hostId2;
+    st.players = normalizePlayers(st.players, hostId2);
+    ensureHost(st);
+    st.players = st.players.map((p) => ({ ...p, isHost: p.id === st.hostId }));
+    st.rounds = roundsIndex;
+    setRoomState(st);
+  })
+  .subscribe((s) => setConn(s === 'SUBSCRIBED'));
         });
     })();
 
