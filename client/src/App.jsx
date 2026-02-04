@@ -245,7 +245,7 @@ export default function App() {
       if (channel) supabase.removeChannel(channel);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [me.code, roundsIndex]);
+  }, [me.code]);
 
   // ---------- Create ----------
   const doCreate = async (rawName) => {
