@@ -233,22 +233,23 @@ export default function App() {
 
      channel = supabase
   .channel(`room:${code}`, { config: { broadcast: { self: true } } })
-  .on("broadcast", { event: "state_updated" }, async () => {
-    console.log("GOT state_updated", msg);
-    const fr2 = await fetchRoomState(code);
-    if (!fr2.ok || !fr2.state) return;
+  .on("broadcast", { event: "state_updated" }, async (msg) => {
+  console.log("GOT state_updated", msg);
+  const fr2 = await fetchRoomState(code);
+  if (!fr2.ok || !fr2.state) return;
 
-    const st = deepClone(fr2.state);
-    st.code = code;
-    const hostId2 = String(st.hostId || st.hostPlayerId || '');
-    st.hostId = hostId2;
-    st.hostPlayerId = hostId2;
-    st.players = normalizePlayers(st.players, hostId2);
-    ensureHost(st);
-    st.players = st.players.map((p) => ({ ...p, isHost: p.id === st.hostId }));
-    st.rounds = roundsIndex;
-    setRoomState(st);
-  })
+  const st = deepClone(fr2.state);
+  st.code = code;
+  const hostId2 = String(st.hostId || st.hostPlayerId || '');
+  st.hostId = hostId2;
+  st.hostPlayerId = hostId2;
+  st.players = normalizePlayers(st.players, hostId2);
+  ensureHost(st);
+  st.players = st.players.map((p) => ({ ...p, isHost: p.id === st.hostId }));
+  st.rounds = roundsIndex;
+  setRoomState(st);
+})
+
   .subscribe((s) => setConn(s === "SUBSCRIBED"));
 
 
