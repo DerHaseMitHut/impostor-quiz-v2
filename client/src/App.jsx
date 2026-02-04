@@ -83,10 +83,11 @@ async function writeRoomStateCAS(code, prevUpdatedAt, nextState) {
     .update({ state: nextState, updated_at: new Date().toISOString() })
     .eq('code', code)
     .eq('updated_at', prevUpdatedAt)
-    .select('updated_at')
-    .single();
+    .select('updated_at');
+
   if (error) return { ok: false, error };
-  return { ok: true, updated_at: data?.updated_at || null };
+if (!data || data.length === 0) return { ok: false, error: new Error('conflict') };
+return { ok: true, updated_at: data[0]?.updated_at || null };
 }
 
 async function updateRoomState(code, mutator, tries = 6) {
