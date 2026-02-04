@@ -223,7 +223,7 @@ export default function App() {
         .channel(`room_state:${code}`)
         .on(
           'postgres_changes',
-          { event: '*', schema: 'public', table: 'room_state', filter: `code=eq.${code}` },
+          { event: '*', schema: 'public', table: 'room_state' },
           (payload) => {
             const st = deepClone(payload?.new?.state || {});
             const hostId2 = String(st.hostId || st.hostPlayerId || '');
