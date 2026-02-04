@@ -217,6 +217,8 @@ export default function App() {
         setRoomState(null);
       }
 
+      console.log("SUBSCRIBE room_state code =", code);
+
       channel = supabase
         .channel(`room_state:${code}`)
         .on(
