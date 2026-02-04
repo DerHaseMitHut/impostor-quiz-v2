@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useCallback, useMemo, useState } from "react";
 import { supabase } from "../supabaseClient";
 
 const CAT_LABEL = {
@@ -81,37 +81,62 @@ export default function RoundsManager({ socket, me, room }) {
     return {};
   };
 
-  const refreshRounds = async () => {
-    setLoading(true);
+  const refreshRounds = useCallback(async () => {
+  setLoading(true);
 
-    const { data, error } = await supabase
-      .from("rounds")
-      .select("id,category,name,data")
-      .order("category", { ascending: true })
-      .order("name", { ascending: true });
+  const { data, error } = await supabase
+    .from("rounds")
+    .select("id,category,name,data")
+    .order("category", { ascending: true })
+    .order("name", { ascending: true });
 
-    setLoading(false);
+  setLoading(false);
 
-    if (error) {
-      console.error(error);
-      alert("Fehler beim Laden der Runden aus Supabase.");
-      return;
-    }
+  if (error) {
+    console.error(error);
+    alert("Fehler beim Laden der Runden aus Supabase.");
+    return;
+  }
 
-    const grouped = {};
-    for (const row of data || []) {
-      const rr = normalizeRoundRow(row);
-      if (!grouped[rr.category]) grouped[rr.category] = [];
-      grouped[rr.category].push(rr);
-    }
-    setRoundsByCat(grouped);
-  };
+  const grouped = {};
+  for (const row of data || []) {
+    const rr = normalizeRoundRow(row);
+    if (!grouped[rr.category]) grouped[rr.category] = [];
+    grouped[rr.category].push(rr);
+  }
+  setRoundsByCat(grouped);
+}, []);
+
 
   // initial load
   useEffect(() => {
     refreshRounds();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  
+  //
+  useEffect(() => {
+  console.log("REALTIME rounds: init");
+
+  const channel = supabase
+    .channel("rounds-changes")
+    .on(
+      "postgres_changes",
+      { event: "*", schema: "public", table: "rounds" },
+      (payload) => {
+        console.log("REALTIME rounds: payload", payload);
+        refreshRounds();
+      }
+    )
+    .subscribe((status) => {
+      console.log("REALTIME rounds: status", status);
+    });
+
+  return () => {
+    console.log("REALTIME rounds: cleanup");
+    supabase.removeChannel(channel);
+  };
+}, [refreshRounds]);
 
   // Auswahl sauber halten
   useEffect(() => {
