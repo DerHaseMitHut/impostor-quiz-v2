@@ -246,7 +246,6 @@ export default function App() {
     setRoomState(st);
   })
   .subscribe((s) => setConn(s === 'SUBSCRIBED'));
-        });
     })();
 
     return () => {
