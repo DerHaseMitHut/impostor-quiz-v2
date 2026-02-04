@@ -1,3 +1,4 @@
+let activeRoomChannel = null;
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { supabase } from './supabaseClient';
 import { getSocket } from './socket';
@@ -98,15 +99,17 @@ async function updateRoomState(code, mutator, tries = 6) {
     const changed = await mutator(st);
     if (changed === false) return { ok: true, skipped: true, state: st };
     const wr = await writeRoomStateCAS(code, prev, st);
-    if (wr.ok) {
-  // alle Clients informieren (Host UND Teilnehmer)
-  supabase.channel(`room:${code}`).send({
-    type: 'broadcast',
-    event: 'state_updated',
-    payload: { code }
-  });
+   if (wr.ok) {
+  if (activeRoomChannel) {
+    await activeRoomChannel.send({
+      type: "broadcast",
+      event: "state_updated",
+      payload: { code }
+    });
+  }
   return { ok: true, state: st, updated_at: wr.updated_at };
 }
+
 
     lastErr = wr.error;
   }
@@ -228,9 +231,9 @@ export default function App() {
 
       console.log("SUBSCRIBE room_state code =", code);
 
-      channel = supabase
+     channel = supabase
   .channel(`room:${code}`)
-  .on('broadcast', { event: 'state_updated' }, async () => {
+  .on("broadcast", { event: "state_updated" }, async () => {
     const fr2 = await fetchRoomState(code);
     if (!fr2.ok || !fr2.state) return;
 
@@ -245,12 +248,16 @@ export default function App() {
     st.rounds = roundsIndex;
     setRoomState(st);
   })
-  .subscribe((s) => setConn(s === 'SUBSCRIBED'));
+  .subscribe((s) => setConn(s === "SUBSCRIBED"));
+
+activeRoomChannel = channel; // <— DAS ist der wichtige Teil
+
     })();
 
     return () => {
       cancelled = true;
       if (channel) supabase.removeChannel(channel);
+      if (activeRoomChannel === channel) activeRoomChannel = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [me.code]);
