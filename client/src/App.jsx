@@ -236,10 +236,6 @@ export default function App() {
   .on("broadcast", { event: "state_updated" }, async () => {
     const fr2 = await fetchRoomState(code);
     if (!fr2.ok || !fr2.state) return;
-    // ...dein setRoomState Code...
-  })
-  .subscribe((s) => setConn(s === "SUBSCRIBED"));
-
 
     const st = deepClone(fr2.state);
     st.code = code;
@@ -253,6 +249,7 @@ export default function App() {
     setRoomState(st);
   })
   .subscribe((s) => setConn(s === "SUBSCRIBED"));
+
 
 activeRoomChannel = channel; // <— DAS ist der wichtige Teil
 
