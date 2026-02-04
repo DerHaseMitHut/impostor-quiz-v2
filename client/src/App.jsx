@@ -234,6 +234,7 @@ export default function App() {
      channel = supabase
   .channel(`room:${code}`, { config: { broadcast: { self: true } } })
   .on("broadcast", { event: "state_updated" }, async () => {
+    console.log("GOT state_updated", msg);
     const fr2 = await fetchRoomState(code);
     if (!fr2.ok || !fr2.state) return;
 
